@@ -1,0 +1,224 @@
+/*********************************************** Default colors, margins and sizing ***********************************************/
+
+html {
+    font-size: 100%;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #1C3763, #BB3B56);
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/* 
+font-family: 'Noto Serif', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
+
+/***********************************************
+	Hypertext links
+***********************************************/
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/* Top navigation */
+
+.side-nav {
+    float: right;
+    margin-right: 10%;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    margin-top: 2%;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.side-nav:hover {
+    box-shadow: 2px 2px white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form1 {
+    /* margin-top: 15%; */
+    display: grid;
+    grid-gap: 5px;
+    width: 40%;
+    margin-top: 10%;
+    position: absolute;
+    left: 45%;
+}
+
+#form1 h2 {
+    color: white;
+    margin-top: 0px;
+    font-family: 'Noto Serif', serif;
+}
+
+#email {
+    border-radius: 40px;
+    padding: 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#password {
+    border-radius: 40px;
+    padding: 30px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+button {
+    border-radius: 40px;
+    background-color: #1C3763;
+    border-style: none;
+    color: white;
+    padding: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+button:hover {
+    box-shadow: 2px 2px white;
+    cursor: pointer;
+}
+
+.main-image {
+    width: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom-text {
+    margin-left: 55%;
+    color: white;
+    width: 47%;
+}
+
+.forget-password {
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.register {
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    margin-top: 2%;
+}
+
+.bottom-text a {
+    color: white;
+}
+
+
+/* media queries for mobile phones and tablets */
+
+@media screen and (max-width: 768px) {
+    .main-image {
+        width: 100%;
+    }
+    /* img {
+        max-width: 100%;
+        height: auto;
+    } */
+    .container {
+        display: inline;
+    }
+    #form1 {
+        /* margin-top: 15%; */
+        display: grid;
+        grid-gap: 10px;
+        max-width: 20%;
+        margin-top: 10%;
+        justify-content: center;
+    }
+    #email {
+        border-radius: 40px;
+        padding: 30px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+    #password {
+        border-radius: 40px;
+        padding: 30px;
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        text-align: left;
+    }
+    button {
+        border-radius: 40px;
+        background-color: #1C3763;
+        border-style: none;
+        color: white;
+        padding: 30px;
+    }
+    .bottom-text {
+        color: white;
+        width: 100%;
+        margin-left: 10%;
+    }
+    .side-nav {
+        float: right;
+        margin-right: 10%;
+        color: white;
+        border: 1.5px solid white;
+        border-radius: 30px;
+        margin-top: 7%;
+        cursor: pointer;
+        width: 30%;
+        text-align: center;
+        font-size: 11px;
+    }
+}
